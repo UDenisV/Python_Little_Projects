@@ -5,7 +5,7 @@ cur = conn.cursor()
 cur.execute("DROP TABLE IF EXISTS classes")
 cur.execute("DROP TABLE IF EXISTS students")
 
-query = "CREATE TABLE IF NOT EXISTS classes (Id INT, class INT, num_of_stud INT, teacher TEXT)"
+query = "CREATE TABLE IF NOT EXISTS classes (id INT, class INT, num_of_stud INT, teacher TEXT)"
 cur.execute(query)
 cur.execute("INSERT INTO classes VALUES(1, 7, 20, 'Ivanova')")
 cur.execute("INSERT INTO classes VALUES(2, 8, 24, 'Petrova')")
