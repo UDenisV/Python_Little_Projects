@@ -122,7 +122,7 @@ rows = cur.fetchall()
 for row in rows:
     print(row)
 print('--------------------------------')
-cur.execute("SELECT * FROM classes WHERE class!='5А' AND num_of_stud>25")
+cur.execute("SELECT * FROM classes WHERE class<>'5А' AND num_of_stud>25")
 rows = cur.fetchall()
 for row in rows:
     print(row)
